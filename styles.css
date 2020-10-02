@@ -1,24 +1,33 @@
 *, *::after, *::before {
   box-sizing: border-box;
   font-family: Gotham Rounded, sans-serif;
+  
 }
-
 body {
-  background: linear-gradient(to right, hsl(200, 100%, 50%), hsl(175, 100%, 50%));
+  background-image: linear-gradient(250deg,rgb(92, 255, 255), rgb(255, 255, 255), rgb(25, 177, 204)); ;
+  overflow: hidden;
+  
+
+}
+.body {
+  
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   overflow: hidden;
+  
 }
 
 .clock {
+  margin: auto;
   width: 300px;
   height: 300px;
   background-color: rgba(255, 255, 255, .8);
   border-radius: 50%;
-  border: 2px solid black;
+  border: 2px solid rgb(2, 46, 40);
   position: relative;
+  box-shadow: 1px 1px 5px 10px rgb(2, 46, 40);
 }
 
 .clock .number {
@@ -29,6 +38,8 @@ body {
   text-align: center;
   transform: rotate(var(--rotation));
   font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(2, 46, 40);
 }
 
 .clock .number1 { --rotation: 30deg; }
@@ -85,4 +96,106 @@ body {
   width: 10px;
   height: 35%;
   background-color: black;
+}
+
+
+
+/* dark mode */
+.mode1 {
+  display: flex;
+  align-items: center;
+  z-index: 2000;
+ 
+}
+
+
+.D_mode {
+  display: block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: currentColor;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(2, 46, 40) ;
+}
+
+.L_mode {
+  display: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: currentColor;
+  text-transform: uppercase;
+  font-weight: bold;  
+}
+.checkbox {
+	opacity: 0;
+  position: absolute;
+}
+
+.label {
+  float: right;
+  margin: 10px;
+	background-color: rgb(2, 46, 40);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 6px;
+	position: relative;
+	height: 10px;
+	width: 10px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 17px;
+	width: 17px;
+	transform: translateX(0px);
+  transition: transform 0.3s linear;
+  margin: auto;  
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(20px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
+.dark {
+  background-color: #141418;
+  background-image: linear-gradient(300deg,#141418, #ece9e9, #040405 );
+  color: #fff;
+  
+}
+
+body.dark .label{
+  background-color: #141418;
+}
+
+
+body.dark .clock {
+  background-color: #fafafa;
+  color: rgb(87, 9, 9);
+  box-shadow: 1px 1px 5px 10px #141418;
+}
+
+
+body.dark .L_mode {
+  display: block;
+  color: #141418;
+}
+
+body.dark .D_mode {
+  display: none;
 }
