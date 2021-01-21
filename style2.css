@@ -1,0 +1,143 @@
+body {
+	background: url(https://c4.wallpaperflare.com/wallpaper/861/409/209/time-background-watch-wallpaper-preview.jpg);
+  background-size: cover;
+}
+
+#content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+#clock {
+	font-family: 'Montserrat', "Segoe UI", Segoe, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 70px;
+	position:absolute;
+	text-align: center;
+	line-height: 300px;
+	width: 300px;
+	color:white;
+	display:block;
+	z-index: 5;
+}
+
+.progress-circle {
+	position: relative;
+	margin: 10px;
+	padding: 0;
+	width: 300px;
+	height: 300px;
+	background-color: black;
+	border-radius: 50%;
+}
+
+.progress-circle:after {
+	border: none;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	display: block;
+	border-radius: 50%;
+	width: 260px;
+	height: 260px;
+	background-color: black;
+	content: " ";
+}
+
+.left-half-clipper {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	position: absolute;
+	clip: rect(0, 300px, 300px, 150px);	
+}
+
+.progress-circle.over-30s left-half-clipper {
+	
+	clip: rect(auto,auto,auto,auto);
+}
+
+.value-bar {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	position: absolute;
+	clip: rect(0, 150px, 300px,0);
+	border: 20px solid #b3b3b3;
+	box-sizing: border-box;
+}
+
+.progress-circle.over-30s .first-30s-bar {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: #b3b3b3;
+  clip: rect(0, 300px, 300px, 150px);
+}
+
+.progress-circle:not(.over-30s) .first-30s-bar {
+	display: none;
+}
+
+.progress-circle.s0  .value-bar { display: none; }
+.progress-circle.s1  .value-bar { transform: rotate(6deg); }
+.progress-circle.s2  .value-bar { transform: rotate(12deg); }
+.progress-circle.s3  .value-bar { transform: rotate(18deg); }
+.progress-circle.s4  .value-bar { transform: rotate(24deg); }
+.progress-circle.s5  .value-bar { transform: rotate(30deg); }
+.progress-circle.s6  .value-bar { transform: rotate(36deg); }
+.progress-circle.s7  .value-bar { transform: rotate(42deg); }
+.progress-circle.s8  .value-bar { transform: rotate(48deg); }
+.progress-circle.s9  .value-bar { transform: rotate(54deg); }
+.progress-circle.s10 .value-bar { transform: rotate(60deg); }
+.progress-circle.s11 .value-bar { transform: rotate(66deg); }
+.progress-circle.s12 .value-bar { transform: rotate(72deg); }
+.progress-circle.s13 .value-bar { transform: rotate(78deg); }
+.progress-circle.s14 .value-bar { transform: rotate(84deg); }
+.progress-circle.s15 .value-bar { transform: rotate(90deg); }
+.progress-circle.s16 .value-bar { transform: rotate(96deg); }
+.progress-circle.s17 .value-bar { transform: rotate(102deg); }
+.progress-circle.s18 .value-bar { transform: rotate(108deg); }
+.progress-circle.s19 .value-bar { transform: rotate(114deg); }
+.progress-circle.s20 .value-bar { transform: rotate(120deg); }
+.progress-circle.s21 .value-bar { transform: rotate(126deg); }
+.progress-circle.s22 .value-bar { transform: rotate(132deg); }
+.progress-circle.s23 .value-bar { transform: rotate(138deg); }
+.progress-circle.s24 .value-bar { transform: rotate(144deg); }
+.progress-circle.s25 .value-bar { transform: rotate(150deg); }
+.progress-circle.s26 .value-bar { transform: rotate(156deg); }
+.progress-circle.s27 .value-bar { transform: rotate(162deg); }
+.progress-circle.s28 .value-bar { transform: rotate(168deg); }
+.progress-circle.s29 .value-bar { transform: rotate(174deg); }
+.progress-circle.s30 .value-bar { transform: rotate(180deg); }
+.progress-circle.s31 .value-bar { transform: rotate(186deg); }
+.progress-circle.s32 .value-bar { transform: rotate(192deg); }
+.progress-circle.s33 .value-bar { transform: rotate(198deg); }
+.progress-circle.s34 .value-bar { transform: rotate(204deg); }
+.progress-circle.s35 .value-bar { transform: rotate(210deg); }
+.progress-circle.s36 .value-bar { transform: rotate(216deg); }
+.progress-circle.s37 .value-bar { transform: rotate(222deg); }
+.progress-circle.s38 .value-bar { transform: rotate(228deg); }
+.progress-circle.s39 .value-bar { transform: rotate(234deg); }
+.progress-circle.s40 .value-bar { transform: rotate(240deg); }
+.progress-circle.s41 .value-bar { transform: rotate(246deg); }
+.progress-circle.s42 .value-bar { transform: rotate(252deg); }
+.progress-circle.s43 .value-bar { transform: rotate(258deg); }
+.progress-circle.s44 .value-bar { transform: rotate(264deg); }
+.progress-circle.s45 .value-bar { transform: rotate(270deg); }
+.progress-circle.s46 .value-bar { transform: rotate(276deg); }
+.progress-circle.s47 .value-bar { transform: rotate(282deg); }
+.progress-circle.s48 .value-bar { transform: rotate(288deg); }
+.progress-circle.s49 .value-bar { transform: rotate(294deg); }
+.progress-circle.s50 .value-bar { transform: rotate(300deg); }
+.progress-circle.s51 .value-bar { transform: rotate(306deg); }
+.progress-circle.s52 .value-bar { transform: rotate(312deg); }
+.progress-circle.s53 .value-bar { transform: rotate(318deg); }
+.progress-circle.s54 .value-bar { transform: rotate(324deg); }
+.progress-circle.s55 .value-bar { transform: rotate(330deg); }
+.progress-circle.s56 .value-bar { transform: rotate(336deg); }
+.progress-circle.s57 .value-bar { transform: rotate(342deg); }
+.progress-circle.s58 .value-bar { transform: rotate(348deg); }
+.progress-circle.s59 .value-bar { transform: rotate(354deg); }
