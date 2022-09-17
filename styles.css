@@ -43,6 +43,51 @@ body {
 .clock .number10 { --rotation: 300deg; }
 .clock .number11 { --rotation: 330deg; }
 
+/* Making the numbers upright after they have been rotated */
+#num1 {
+    transform: rotateZ(-30deg);
+}
+
+#num2 {
+    transform: rotateZ(-60deg);
+}
+
+#num3 {
+    transform: rotateZ(-90deg);
+}
+
+#num4 {
+    transform: rotateZ(-120deg);
+}
+
+#num5 {
+    transform: rotateZ(-150deg);
+}
+
+#num6 {
+    transform: rotateZ(-180deg);
+}
+
+#num7 {
+    transform: rotateZ(-210deg);
+}
+
+#num8 {
+    transform: rotateZ(-240deg);
+}
+
+#num9 {
+    transform: rotateZ(-270deg);
+}
+
+#num10 {
+    transform: rotateZ(-300deg);
+}
+
+#num11 {
+    transform: rotateZ(-330deg);
+}
+
 .clock .hand {
   --rotation: 0;
   position: absolute;
