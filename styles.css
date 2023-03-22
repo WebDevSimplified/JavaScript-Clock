@@ -31,6 +31,26 @@ body {
   font-size: 1.5rem;
 }
 
+
+.clock .num-span{
+	display: inline-block;
+	transform: rotate(var(--rotate));
+
+  }
+
+  #number1 { --rotate: -30deg; }
+  #number2 { --rotate: -60deg; }
+  #number3 { --rotate: -90deg; }
+  #number4 { --rotate: -120deg; }
+  #number5 { --rotate: -150deg; }
+  #number6 { --rotate: -180deg; }
+  #number7 { --rotate: -210deg; }
+  #number8 { --rotate: -240deg; }
+  #number9 { --rotate: -270deg; }
+  #number10 { --rotate: -300deg; }
+  #number11 { --rotate: -330deg; }
+ 
+
 .clock .number1 { --rotation: 30deg; }
 .clock .number2 { --rotation: 60deg; }
 .clock .number3 { --rotation: 90deg; }
